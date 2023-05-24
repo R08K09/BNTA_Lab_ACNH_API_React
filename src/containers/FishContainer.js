@@ -53,9 +53,6 @@ const FishContainer = () => {
             </div>
         </>
     )
-
-
-
 };
 
 export default FishContainer;

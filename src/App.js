@@ -1,7 +1,9 @@
 import './App.css';
 import FishContainer from './containers/FishContainer';
 import acLogo from './assets/acLogo.png'
-import SeaCreatureContainer from './containers/SeaCreaturesContainer';
+import SeaCreatureContainer from './containers/SeaCreatureContainer';
+import BugsContainer from './containers/BugContainer';
+import FossilContainer from './containers/FossilContainer';
 
 function App() {
   return (
@@ -30,6 +32,16 @@ function App() {
         <section className='sea_creatures'>
           <h2><u>List of Sea Creatures</u></h2>
           <SeaCreatureContainer />
+        </section>
+
+        <section className='bugs'>
+          <h2><u>List of Bugs</u></h2>
+          <BugsContainer />
+        </section>
+
+        <section className='fossils'>
+          <h2><u>List of Fossils</u></h2>
+          <FossilContainer />
         </section>
 
 

@@ -17,7 +17,7 @@ const SeaCreatureContainer = () => {
         fetchSeaCreatures()
     }, [])
 
-    const updateSCCaughtList = (seaCreature) => {
+    const updateCaughtList = (seaCreature) => {
         if(caughtSeaCreatures.includes(seaCreature)){
             const updatedSeaCreature = [seaCreature, ...seaCreatures];
             const updatedCaughtSeaCreature = caughtSeaCreatures.filter((seaCreatureObject) => seaCreatureObject.name["name-EUen"] !== seaCreature.name["name-EUen"])
@@ -39,7 +39,7 @@ const SeaCreatureContainer = () => {
 
                 <div className="list_caught_sea_creatures">
                     <ul>{caughtSeaCreatures.map((seaCreature) => (
-                        <SeaCreature seaCreature={seaCreature} updateSCCaughtList={updateSCCaughtList} caught={true} />))}</ul>
+                        <SeaCreature seaCreature={seaCreature} updateSCCaughtList={updateCaughtList} caught={true} />))}</ul>
                 </div>
             </div>
 
@@ -48,14 +48,11 @@ const SeaCreatureContainer = () => {
 
                 <div className="list_not_caught_sea_creatures">
                     <ul>{seaCreatures.map((seaCreature) => (
-                        <SeaCreature seaCreature={seaCreature} updateSCCaughtList={updateSCCaughtList} caught={false} />))}</ul>
+                        <SeaCreature seaCreature={seaCreature} updateSCCaughtList={updateCaughtList} caught={false} />))}</ul>
                 </div>
             </div>
         </>
     )
-
-
-
 };
 
 export default SeaCreatureContainer;

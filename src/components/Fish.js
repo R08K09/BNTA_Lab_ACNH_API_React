@@ -12,7 +12,6 @@ const Fish = ({fish, updateFishCaughtList}) => {
         setToggle(!toggle);
     }
 
-
     return(
         <div className="fish">
             <img src={`${fish["icon_uri"]}`} alt="fish" className='fish_image'/>
@@ -30,9 +29,7 @@ const Fish = ({fish, updateFishCaughtList}) => {
             {toggle ? <p>{fish["museum-phrase"]}</p> : null}
 
         </div>
-
     );
-
 }
 
 export default Fish;

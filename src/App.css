@@ -54,9 +54,10 @@ body{
   font-family: sans-serif;
 }
 
-.fishes h2, .sea_creatures h2{
+.fishes h2, .sea_creatures h2, .bugs h2, .fossils h2{
   text-align: center;
   color: white;
+  font-size: xx-large;
 }
 
 .hero{
@@ -70,45 +71,45 @@ body{
   box-sizing: border-box;
 }
 
-/* ----- body: fish ----- */
-.fish {
+/* ----- body: fish/sea_creatures/bugs ----- */
+.fish, .sea_creature, .bug, .fossil {
   padding: 50px;
   max-width: 350px;
 }
 
-.fish-buttons{
+.fish-buttons, .seaCreature-buttons, .bug-buttons, .fossil-buttons{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.fish-buttons button{
+.fish-buttons button, .seaCreature-buttons button, .bug-buttons button, .fossil-buttons button{
   margin: 5px;
 }
 
-.fish_image{
+.fish_image, .sea_creature_image, .bug_image, .fossil_image{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 75%;
 }
 
-.fish h4, .fish p{
+.fish h4, .fish p, .sea_creature h4, .sea_creature p, .bug h4, .bug p, .fossil h4, .fossil p{
   text-align: center;
 }
 
 
-/* ----- body: caught_fishes ----- */
-.caught_fishes{
+/* ----- body: caught_fishes/caught_sea_creaures/caught_bugs ----- */
+.caught_fishes, .caught_sea_creatures, .caught_bugs, .found_fossils{
   flex-wrap: wrap;
 }
 
-.caught_fishes h3{
+.caught_fishes h3, .caught_sea_creatures h3, .caught_bugs h3, .found_fossils h3{
   font-size: x-large;
   color: white;
 }
 
-.list_caught_fish ul{
+.list_caught_fish ul, .list_caught_sea_creatures ul, .list_caught_bugs ul, .list_found_fossils ul{
   list-style: none;
   flex-wrap: wrap;
   display: flex;
@@ -117,23 +118,23 @@ body{
   justify-content: space-between;
 }
 
-.list_caught_fish li {
+.list_caught_fish li, .list_caught_sea_creatures li, .list_caught_bugs li, .list_found_fossils li{
   flex: 1 0 25%;
   padding: 0px;
 }
 
 
-/* ----- body: fish_to_catch ----- */
-.fish_to_catch{
+/* ----- body: fish_to_catch/sea_creatures_to_catch/bugs_to_catch ----- */
+.fish_to_catch, .sea_creatures_to_catch, .bugs_to_catch, .fossils_to_find{
   color: black ;
   flex-wrap: wrap;
 }
 
-.fish_to_catch h3{
+.fish_to_catch h3, .sea_creatures_to_catch h3, .bugs_to_catch h3, .fossils_to_find h3{
   font-size: x-large;
 }
 
-.list_not_caught_fish ul{
+.list_not_caught_fish ul, .list_not_caught_sea_creatures ul, .list_not_caught_bugs ul, .list_not_found_fossils ul{
   list-style: none;
   flex-wrap: wrap;
   display: flex;
@@ -142,88 +143,10 @@ body{
   justify-content: space-between;
 }
 
-.list_not_caught_fish li {
+.list_not_caught_fish li, .list_not_caught_sea_creatures li, .list_not_caught_bugs li, .list_not_found_fossils li{
   flex: 1 0 25%;
   margin: 0px;
 }
-
-
-/* ----- body: sea creature ----- */
-.sea_creature {
-  padding: 50px;
-  max-width: 350px;
-}
-
-.seaCreature-buttons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.seaCreature-buttons button{
-  margin: 5px;
-}
-
-.sea_creature_image{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-
-.sea_creature h4, .sea_creature p{
-  text-align: center;
-}
-
-
-/* ----- body: caught_sea_creaures ----- */
-.caught_sea_creatures{
-  flex-wrap: wrap;
-}
-
-.caught_sea_creatures h3{
-  font-size: x-large;
-  color:white;
-}
-
-.list_caught_sea_creatures ul{
-  list-style: none;
-  flex-wrap: wrap;
-  display: flex;
-  padding: 0;
-  margin: 0px;
-  justify-content: space-between;
-}
-
-.list_caught_sea_creatures li {
-  flex: 1 0 25%;
-  padding: 0px;
-}
-
-
-/* ----- body: sea_creatures_to_catch ----- */
-.sea_creatures_to_catch{
-  color: black ;
-  flex-wrap: wrap;
-}
-
-.sea_creatures_to_catch h3{
-  font-size: x-large;
-}
-
-.list_not_caught_sea_creatures ul{
-  list-style: none;
-  flex-wrap: wrap;
-  display: flex;
-  padding: 0;
-  margin: 20px;  
-  justify-content: space-between;
-}
-
-.list_not_caught_sea_creatures li {
-  flex: 1 0 25%;
-  margin: 0px;
-} 
 
 
 /* ----- footer ----- */

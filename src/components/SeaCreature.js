@@ -1,17 +1,16 @@
 import { useState } from 'react'
 
-const SeaCreature = ({seaCreature, updateSCCaughtList}) => {
+const SeaCreature = ({seaCreature, updateCaughtList}) => {
 
     const [toggle, setToggle] = useState(false)
 
-    const handleSCClick = (e) => {
-        updateSCCaughtList(seaCreature)
+    const handleClick = (e) => {
+        updateCaughtList(seaCreature)
     }
 
-    const handleSCInfoClick = () => {
+    const handleInfoClick = () => {
         setToggle(!toggle);
     }
-
 
     return(
         <div className="sea_creature">
@@ -21,17 +20,15 @@ const SeaCreature = ({seaCreature, updateSCCaughtList}) => {
             <p>Price: {seaCreature.price} Bells</p>
 
             <div className="seaCreature-buttons">
-                <button onClick={handleSCInfoClick}>Details</button>
+                <button onClick={handleInfoClick}>Details</button>
 
-                <button onClick={handleSCClick}>Caught</button>
+                <button onClick={handleClick}>Caught</button>
             </div>
             
             {toggle ? <p>{seaCreature["museum-phrase"]}</p> : null}
 
         </div>
-
     );
-
 }
 
 export default SeaCreature;
