@@ -1,24 +1,52 @@
-import logo from './logo.svg';
 import './App.css';
+import FishContainer from './containers/FishContainer';
+import acLogo from './assets/acLogo.png'
+import SeaCreatureContainer from './containers/SeaCreaturesContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <img src={acLogo} alt="ac logo"/>
+          <h1>Animal Crossing Encyclopedia</h1>
+          <nav className='navbar'>
+              <a href="/FishContainer">Fish</a>
+              <a href="/SeaCreaturesContainer">Sea Creatures</a>
+              <a href="#">Bugs</a>
+              <a href="#">Fossils</a>
+          </nav>
       </header>
-    </div>
+
+
+      <main>
+        <section className="hero">
+        </section>
+
+        <section className='fishes'>
+          <h2><u>List of Fish</u></h2>
+          <FishContainer />
+        </section>
+
+        <section className='sea_creatures'>
+          <h2><u>List of Sea Creatures</u></h2>
+          <SeaCreatureContainer />
+        </section>
+
+
+      </main>
+
+
+      <footer>
+        <nav>
+              <h2>Useful Links</h2>
+              <a href="#">Fish</a>
+              <a href="#">Sea Creatures</a>
+              <a href="#">Bugs</a>
+          </nav>
+      </footer>
+
+    </>
+
   );
 }
 

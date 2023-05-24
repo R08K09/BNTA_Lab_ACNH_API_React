@@ -1,38 +1,249 @@
-.App {
-  text-align: center;
+/* ----- header ----- */
+header, section, footer {
+  padding: 20px 3%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
+  background-color: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100px;
+}
+
+h1{
+  color: lightseagreen;
+  padding: 20px;
+}
+
+header nav{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  padding: 35px;
+}
+
+header a{
+  color: green;
+  font-weight: bold;;
+}
+
+a:hover{
+  color: rgb(187, 3, 187);
+  text-decoration-line: underline;
+}
+
+header img{
+  width: 100px;
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+/* ----- body ----- */
+body{
+  background: skyblue;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.fishes h2, .sea_creatures h2{
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hero{
+  background-image: url(./assets/ac_background.webp);
+  height: 100px;
+  background-position: center;
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+* {
+  box-sizing: border-box;
+}
+
+/* ----- body: fish ----- */
+.fish {
+  padding: 50px;
+  max-width: 350px;
+}
+
+.fish-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fish-buttons button{
+  margin: 5px;
+}
+
+.fish_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.fish h4, .fish p{
+  text-align: center;
+}
+
+
+/* ----- body: caught_fishes ----- */
+.caught_fishes{
+  flex-wrap: wrap;
+}
+
+.caught_fishes h3{
+  font-size: x-large;
+  color: white;
+}
+
+.list_caught_fish ul{
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 0;
+  margin: 0px;
+  justify-content: space-between;
+}
+
+.list_caught_fish li {
+  flex: 1 0 25%;
+  padding: 0px;
+}
+
+
+/* ----- body: fish_to_catch ----- */
+.fish_to_catch{
+  color: black ;
+  flex-wrap: wrap;
+}
+
+.fish_to_catch h3{
+  font-size: x-large;
+}
+
+.list_not_caught_fish ul{
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 0;
+  margin: 20px;  
+  justify-content: space-between;
+}
+
+.list_not_caught_fish li {
+  flex: 1 0 25%;
+  margin: 0px;
+}
+
+
+/* ----- body: sea creature ----- */
+.sea_creature {
+  padding: 50px;
+  max-width: 350px;
+}
+
+.seaCreature-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seaCreature-buttons button{
+  margin: 5px;
+}
+
+.sea_creature_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.sea_creature h4, .sea_creature p{
+  text-align: center;
+}
+
+
+/* ----- body: caught_sea_creaures ----- */
+.caught_sea_creatures{
+  flex-wrap: wrap;
+}
+
+.caught_sea_creatures h3{
+  font-size: x-large;
+  color:white;
+}
+
+.list_caught_sea_creatures ul{
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 0;
+  margin: 0px;
+  justify-content: space-between;
+}
+
+.list_caught_sea_creatures li {
+  flex: 1 0 25%;
+  padding: 0px;
+}
+
+
+/* ----- body: sea_creatures_to_catch ----- */
+.sea_creatures_to_catch{
+  color: black ;
+  flex-wrap: wrap;
+}
+
+.sea_creatures_to_catch h3{
+  font-size: x-large;
+}
+
+.list_not_caught_sea_creatures ul{
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 0;
+  margin: 20px;  
+  justify-content: space-between;
+}
+
+.list_not_caught_sea_creatures li {
+  flex: 1 0 25%;
+  margin: 0px;
+} 
+
+
+/* ----- footer ----- */
+footer {
+  /* background-color: #fdf2d1; */
+  background-image: url(./assets/ac_footer_img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 350px;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
+
+footer a,
+  footer p {
+    margin: 10px 0;
 }
