@@ -44,7 +44,7 @@ const FossilContainer = () => {
             </div>
 
             <div className="fossils_to_find">
-                <h3>Bugs Yet To Catch</h3>
+                <h3>Fossils Yet To Find</h3>
 
                 <div className="list_not_found_fossils">
                     <ul>{fossils.map((fossil) => (

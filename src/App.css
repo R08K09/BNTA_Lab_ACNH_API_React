@@ -125,12 +125,12 @@ body{
 
 
 /* ----- body: fish_to_catch/sea_creatures_to_catch/bugs_to_catch ----- */
-.fish_to_catch, .sea_creatures_to_catch, .bugs_to_catch, .fossils_to_find{
+.fish_to_catch, .sea_creatures_to_catch, .bug_to_catch, .fossils_to_find{
   color: black ;
   flex-wrap: wrap;
 }
 
-.fish_to_catch h3, .sea_creatures_to_catch h3, .bugs_to_catch h3, .fossils_to_find h3{
+.fish_to_catch h3, .sea_creatures_to_catch h3, .bug_to_catch h3, .fossils_to_find h3{
   font-size: x-large;
 }
 
